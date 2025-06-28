@@ -146,25 +146,41 @@ Isso permite que o desempenho da aplicação seja reavaliado futuramente com fac
 
 ### 🐳 Tentativa de Containerização com Docker
 
-Foi realizada a tentativa de criar um `Dockerfile` para facilitar o deploy da aplicação. No entanto, o processo foi interrompido por limitações no ambiente local:
+Foi realizada a tentativa de criar um `Dockerfile` para facilitar o deploy da aplicação. No entanto, o processo foi interrompido devido a limitações no ambiente local:
 
-- Erro relacionado ao WSL (Windows Subsystem for Linux), exigindo atualização ou ativação no setup da BIOS.
-- A impossibilidade de utilizar Docker impediu testes locais com containers.
+- Erro relacionado ao WSL (Windows Subsystem for Linux), exigindo atualização ou ativação nas configurações da BIOS.
+- A impossibilidade de utilizar o Docker impediu a realização de testes locais com containers.
 
 #### 🖼️ Erro apresentado:
 ![Erro ao executar o Docker](./erroDocker.png)
 
-Apesar disso, todo o projeto está preparado para futura containerização e deploy em ambientes como **Railway**, **Render** ou servidores próprios, bastando resolver a limitação do ambiente local.
-
-### 🔧 Sugestões Futuras
-
-- Corrigir o erro de WSL/BIOS para permitir o uso do Docker Desktop.
-- Utilizar o `Dockerfile` e `docker-compose.yml` para facilitar deploy com MySQL containerizado.
-- Avaliar deploy em nuvem com suporte nativo a aplicações Spring Boot (como [Railway](https://railway.app) ou [Render](https://render.com)).
+Apesar disso, o projeto está totalmente preparado para futura containerização e deploy em ambientes como **Railway**, **Render** ou servidores próprios, bastando resolver a limitação do ambiente local para o uso do Docker.
 
 ---
 
-> 💡 Caso deseje executar o projeto localmente, recomenda-se rodar a aplicação diretamente via Spring Boot (`mvn spring-boot:run`) após configurar o banco MySQL no `application.yml`.
+### ✅ Deploy com Railway
+
+O deploy da aplicação foi realizado com sucesso por meio da plataforma **Railway**, sendo possível verificar através da imagem `sucessDeploy.png`, localizada na raiz do projeto.
+
+#### 🖼️ Deploy realizado com sucesso:
+![Deploy realizado com sucesso](./sucessDeploy.png)
+
+🔗 Link gerado:  
+[https://api-autenticacao-produtos-production.up.railway.app](https://api-autenticacao-produtos-production.up.railway.app)
+
+⚠️ **Observação:** Apesar do deploy ter sido concluído com sucesso, o acesso ao link apresenta instabilidade ocasional (como erro 502). Isso pode estar relacionado à ausência do uso de Docker no deploy, o que compromete o isolamento e a confiabilidade do ambiente de execução.
+
+---
+
+### 🔧 Sugestões Futuras
+
+- Corrigir o erro relacionado ao WSL/BIOS para permitir o uso do Docker Desktop.
+- Utilizar o `Dockerfile` e o `docker-compose.yml` para facilitar o deploy com banco de dados MySQL containerizado.
+- Considerar corrigir os erros do ambiente de desenvolvimento para um melhor uso de provedores de nuvem com suporte nativo a aplicações Spring Boot, como [Railway](https://railway.app) ou [Render](https://render.com), preferencialmente com Docker.
+
+---
+
+> 💡 Para executar o projeto localmente, recomenda-se rodar a aplicação diretamente via Spring Boot (`mvn spring-boot:run`), após configurar corretamente o banco de dados MySQL no arquivo `application.yml`.
 
 ---
 
