@@ -115,6 +115,8 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
 
 ---
 
+---
+
 ## 🚚 Deploy e Docker
 
 ### 🐳 Tentativa de Containerização com Docker
@@ -123,6 +125,9 @@ Foi realizada a tentativa de criar um `Dockerfile` para facilitar o deploy da ap
 
 - Erro relacionado ao WSL (Windows Subsystem for Linux), exigindo atualização ou ativação no setup da BIOS.
 - A impossibilidade de utilizar Docker impediu testes locais com containers.
+
+#### 🖼️ Erro apresentado:
+![Erro ao executar o Docker](./erroDocker.png)
 
 Apesar disso, todo o projeto está preparado para futura containerização e deploy em ambientes como **Railway**, **Render** ou servidores próprios, bastando resolver a limitação do ambiente local.
 
@@ -136,6 +141,7 @@ Apesar disso, todo o projeto está preparado para futura containerização e dep
 
 > 💡 Caso deseje executar o projeto localmente, recomenda-se rodar a aplicação diretamente via Spring Boot (`mvn spring-boot:run`) após configurar o banco MySQL no `application.yml`.
 
+---
 
 ## Licença
 
