@@ -29,7 +29,7 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
 
 ## ⚙️ Pré-requisitos
 
-- Java 17 instalado  
+- Java 21 instalado  
 - Maven ou Wrapper (`mvnw`)  
 - Docker instalado (opcional para deploy com container)
 
