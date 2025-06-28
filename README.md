@@ -14,7 +14,7 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
 
 ## 🚀 Tecnologias Utilizadas
 
-- Java 21  
+- Java 17  
 - Spring Boot 3.5.3  
 - Spring Security  
 - Spring Data JPA  
@@ -29,7 +29,7 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
 
 ## ⚙️ Pré-requisitos
 
-- Java 21 instalado  
+- Java 17 instalado  
 - Maven ou Wrapper (`mvnw`)  
 - Docker instalado (opcional para deploy com container)
 
