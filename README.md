@@ -61,7 +61,7 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
 ```json
 {
   "username": "admin",
-  "password": "123"
+  "password": "123456"
 }
 ```
 3. Copie o token JWT retornado.
