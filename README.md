@@ -124,7 +124,8 @@ Os testes automatizados foram implementados com **JUnit 5** e **Mockito**, garan
 
 - `ProdutoController`  
 - `CategoriaController`  
-- `AuthController`  
+- `AuthController`
+- `TestProtectedController`  
 
 Esses testes asseguram o correto comportamento dos endpoints e a integração entre as camadas da aplicação.
 
