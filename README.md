@@ -115,6 +115,28 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
 
 ---
 
+## 🚚 Deploy e Docker
+
+### 🐳 Tentativa de Containerização com Docker
+
+Foi realizada a tentativa de criar um `Dockerfile` para facilitar o deploy da aplicação. No entanto, o processo foi interrompido por limitações no ambiente local:
+
+- Erro relacionado ao WSL (Windows Subsystem for Linux), exigindo atualização ou ativação no setup da BIOS.
+- A impossibilidade de utilizar Docker impediu testes locais com containers.
+
+Apesar disso, todo o projeto está preparado para futura containerização e deploy em ambientes como **Railway**, **Render** ou servidores próprios, bastando resolver a limitação do ambiente local.
+
+### 🔧 Sugestões Futuras
+
+- Corrigir o erro de WSL/BIOS para permitir o uso do Docker Desktop.
+- Utilizar o `Dockerfile` e `docker-compose.yml` para facilitar deploy com MySQL containerizado.
+- Avaliar deploy em nuvem com suporte nativo a aplicações Spring Boot (como [Railway](https://railway.app) ou [Render](https://render.com)).
+
+---
+
+> 💡 Caso deseje executar o projeto localmente, recomenda-se rodar a aplicação diretamente via Spring Boot (`mvn spring-boot:run`) após configurar o banco MySQL no `application.yml`.
+
+
 ## Licença
 
 Este projeto está licenciado sob a licença **Apache 2.0**.
