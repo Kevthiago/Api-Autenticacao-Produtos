@@ -114,7 +114,31 @@ Esta API fornece funcionalidades de autenticação via JWT e acesso a endpoints 
    `http://localhost:8080/swagger-ui/index.html`
 
 ---
+### ✔️ Testes com JUnit 5 e Mockito
 
+Os testes automatizados foram implementados com **JUnit 5** e **Mockito**, garantindo a validação das funcionalidades principais dos controladores.
+
+- Todos os testes unitários foram executados com **100% de sucesso**.
+
+#### Controladores testados:
+
+- `ProdutoController`  
+- `CategoriaController`  
+- `AuthController`  
+
+Esses testes asseguram o correto comportamento dos endpoints e a integração entre as camadas da aplicação.
+
+---
+
+### 📊 Teste de Carga com JMeter
+
+Foi elaborado um **plano de teste de carga com o Apache JMeter**, visando avaliar o desempenho da API sob múltiplas requisições simultâneas.
+
+- O plano de teste foi executado com **100% de êxito**, sem falhas durante os testes de stress.
+- O arquivo com o plano está salvo na raiz do projeto com o nome:  
+  **`Plano de Teste.jmx`**
+
+Isso permite que o desempenho da aplicação seja reavaliado futuramente com facilidade.
 ---
 
 ## 🚚 Deploy e Docker
